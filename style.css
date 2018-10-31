@@ -1,0 +1,180 @@
+body {
+    background: rgb(20, 20, 20);
+}
+
+button {
+
+    position: absolute;
+    font-size: 40px;
+    background: linear-gradient(rgb(114, 159, 211), rgba(10, 80, 100, 1));
+    margin-top: 120px;
+    margin-left: 270px;
+    height: 60px;
+    transition: 1s ease-in-out;
+    animation: buttonAppear 2s ease-in-out;
+    color: rgba(40, 10, 150, 1);
+
+}
+
+button:hover {
+
+    background: linear-gradient(rgb(90, 153, 148), rgb(7, 8, 68));
+    color: rgba(40, 100, 250, 1);
+    cursor: pointer;
+
+}
+
+@keyframes buttonAppear {
+
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+.screen-container {
+
+    text-justify: center;
+
+}
+
+.section-2 {
+    align-items: center;
+    background: linear-gradient(rgba(40, 10, 150, 1), rgba(120, 110, 250, 1));
+    z-index: 2;
+    font-size: 30px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: rgba(10, 2, 80, 1);
+    box-shadow: 6px 0 20px rgba(20, 20, 20, 1), 10px 0 30px rgba(20, 20, 20, 0.6);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    color: rgba(20, 20, 25, 1);
+    text-shadow: 0 0 1px rgba(200, 200, 250, 1), 0 0 2px rgba(200, 200, 250, 1);
+}
+
+form label {
+    margin-left: 40px;
+}
+
+form input {
+
+    text-align: center;
+    text-shadow: 0 0 2px rgba(10, 180, 250, 1), 0 0 4px rgba(10, 180, 250, 1);
+    font-size: 20px;
+    width: 160px;
+    height: 60px;
+    border-style: inset;
+    border-width: 4px;
+    border-color: rgba(10, 2, 20, 1);
+    background: rgba(10, 2, 20, 1);
+    color: rgba(100, 240, 255, 1);
+    
+}
+
+#second-name-id {
+
+    text-align: center;
+    margin-right: 40px;
+
+}
+
+.root {
+
+    margin-top: 320px;
+    margin-right: 40px;
+    height: 200px;
+    justify-items: center;
+
+}
+
+.dropdown a {
+
+    float: left;
+    transition-duration: 2s;
+
+}
+
+.dropdown-content {
+
+    z-index: 1;
+    height: -40px;
+    transform: scaleY(0);
+    opacity: 0;
+
+}
+
+.dropdown {
+
+    margin-left: 35px;
+    display: inline-block;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+    
+    transition-duration: 0.3s;
+    transform-origin: top;
+    transform: scaleY(1);
+    opacity: 1;
+
+}
+
+.dropdown-content {
+
+    background: rgb(66, 66, 66);
+    color: rgba(100, 240, 255, 1);    
+    animation: opacityHover 2s ease-in-out;
+
+}
+
+.dropdown-select {
+
+    opacity: 1;    
+    animation: opacityHover 2s ease-in-out;
+    transition-duration: 1s;    
+
+}
+
+.dropdown-select:hover {
+
+    cursor: pointer; 
+    color: rgba(150, 150, 255, 1);
+
+}
+
+@keyframes opacityHover {
+
+    0% {color: rgba(20, 20, 25, 1);}
+    100% {color: rgba(20, 100, 250, 1);}
+
+}
+
+.calculate-class {
+    
+    background: rgb(66, 66, 66);
+    color: rgba(100, 240, 255, 1); 
+    transition-duration: 1s;
+    animation-name: selectHover;
+
+}
+
+.calculate-class:hover {
+
+    cursor: pointer;
+    background: rgb(66, 66, 66);
+    color: rgba(255, 60, 60, 1); 
+
+}
+
+@keyframes selectHover {
+
+    0% {background: rgb(66, 66, 66); color: rgba(100, 240, 255, 1);}
+    100% {background: rgb(66, 66, 66); color: rgba(255, 60, 60, 1);}
+
+}
